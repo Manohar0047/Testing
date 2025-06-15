@@ -18,14 +18,14 @@ public class EdgePractice {
     }
     @Test
     public void browserLaunch(String browser){
-        if(browser.equals("Edge")){
+        if(browser.equalsIgnoreCase("Edge")){
             WebDriver driver = new EdgeDriver();
             System.setProperty("Webdriver.edge.driver", "drivers/Edge/msedgedriver.exe");
             driver.manage().window().maximize();
             driver.get("https://www.linkedin.com/login");
 
         }
-        else if (browser.equals("Chrome")){
+        else if (browser.equalsIgnoreCase("Chrome")){
             WebDriver driver = new ChromeDriver();
             System.setProperty("webdriver.chrome.driver", "drivers/chrome/chrome.exe");
             driver.manage().window().maximize();

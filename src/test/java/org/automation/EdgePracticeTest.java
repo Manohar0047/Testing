@@ -8,7 +8,7 @@ public class EdgePracticeTest {
     EdgePractice edgePractice = new EdgePractice ();
     @Test
     public void browserLaunchTest(){
-        edgePractice.browserLaunch("AVB");
+        edgePractice.browserLaunch("chrome");
     }
 
 }
