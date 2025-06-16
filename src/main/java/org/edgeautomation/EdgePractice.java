@@ -12,9 +12,6 @@ public class EdgePractice {
         System.setProperty("Webdriver.edge.driver", "drivers/Edge/msedgedriver.exe");
         driver.manage().window().maximize();
         driver.get("https://www.linkedin.com/login");
-
-
-
     }
     @Test
     public void browserLaunch(String browser){

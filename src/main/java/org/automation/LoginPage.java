@@ -12,7 +12,7 @@ public class LoginPage {
         driver.manage().window().maximize();
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
         Assert.assertEquals(driver.getTitle(), "Practice Page", "Title Does not match ");
-        driver.quit();
+        // driver.quit();
 
 
 
