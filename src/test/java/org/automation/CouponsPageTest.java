@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class CouponsPageTest {
     CouponsPage couponsPage = new CouponsPage();
     @Test
-    public  void CouponsPageVerificationTest(){
+    public static void CouponsPageVerificationTest(){
 
         CouponsPage.setUp();
 
