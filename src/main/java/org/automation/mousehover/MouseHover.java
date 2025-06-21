@@ -5,7 +5,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 
 public class MouseHover {
     public static void setUp() {
@@ -17,7 +16,8 @@ public class MouseHover {
         scroll.executeScript("window.scrollBy(0,1000)");
         Actions action = new Actions(driver);
         action.click(driver.findElement(By.id("mousehover"))).perform();
-        driver.findElement(By.xpath("/html/body/div[4]/div/fieldset/div/div/a[1]")).click();
+        //driver.findElement(By.xpath("/html/body/div[4]/div/fieldset/div/div/a[1]")).click();
+       driver.findElement(By.xpath("/html/body/div[4]/div/fieldset/div/div/a[2]")).click();
 
     }
 }

@@ -17,9 +17,5 @@ public class LatestNewsPage {
         driver.findElement(By.xpath("/html/body/div[6]/table/tbody/tr/td[2]/ul/li[2]/a")).click();
 
     }
-//    public static void verifyLatestNewsPage() {
-//        WebDriver driver = new ChromeDriver();
-//        driver.findElement(By.xpath("/html/body/div[6]/table/tbody/tr/td[2]/ul/li[2]/a")).click();
-//
-//    }
+
 }
