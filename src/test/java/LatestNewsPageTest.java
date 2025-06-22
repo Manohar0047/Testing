@@ -3,10 +3,11 @@ import org.testng.annotations.Test;
 
 public class LatestNewsPageTest {
 
-    LatestNewsPage latestNewsPage = new LatestNewsPage();
+    LatestNewsPage LatestNewsPage = new LatestNewsPage();
     @Test
     public  void verifyLatestNewsPage() {
         LatestNewsPage.setUp();
+
 
     }
 }

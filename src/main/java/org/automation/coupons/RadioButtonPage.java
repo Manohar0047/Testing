@@ -1,19 +1,17 @@
 package org.automation.coupons;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.resource.BasePage;
 
 public class RadioButtonPage {
+    BasePage basePage = new BasePage();
+
     public void setUp() {
-        WebDriver driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", "drivers/chrome/chrome.exe");
-        driver.manage().window().maximize();
-        driver.get("https://rahulshettyacademy.com/AutomationPractice/");
-        driver.findElement(By.xpath("(//input[@name='radioButton'])[1]")).click();
-        driver.findElement(By.xpath("(//input[@name='radioButton'])[2]")).click();
-        driver.findElement(By.xpath("(//input[@name='radioButton'])[3]")).click();
-        driver.close();
+        basePage.launchBrowser();
+        basePage.getDriver().findElement(By.xpath("(//input[@name='radioButton'])[1]")).click();
+        basePage.getDriver().findElement(By.xpath("(//input[@name='radioButton'])[2]")).click();
+        basePage.getDriver().findElement(By.xpath("(//input[@name='radioButton'])[3]")).click();
+        basePage.getDriver().close();
 
     }
 }
