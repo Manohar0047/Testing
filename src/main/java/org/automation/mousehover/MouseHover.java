@@ -2,22 +2,20 @@ package org.automation.mousehover;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
+import org.resource.BasePage;
+
 
 public class MouseHover {
-    public static void setUp() {
-        WebDriver driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", "drivers/chrome/chrome.exe");
-        driver.manage().window().maximize();
-        driver.get("https://rahulshettyacademy.com/AutomationPractice/");
-        JavascriptExecutor scroll = (JavascriptExecutor) driver;
+    BasePage basePage = new BasePage();
+
+    public void setUp() {
+        basePage.launchBrowser();
+        JavascriptExecutor scroll = (JavascriptExecutor) basePage.getDriver();
         scroll.executeScript("window.scrollBy(0,1000)");
-        Actions action = new Actions(driver);
-        action.click(driver.findElement(By.id("mousehover"))).perform();
-        driver.findElement(By.xpath("/html/body/div[4]/div/fieldset/div/div/a[1]")).click();
+        Actions action = new Actions(basePage.getDriver());
+        action.click(basePage.getDriver().findElement(By.id("mousehover"))).perform();
+        basePage.getDriver().findElement(By.xpath("/html/body/div[4]/div/fieldset/div/div/a[1]")).click();
 
     }
 }

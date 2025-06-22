@@ -5,12 +5,12 @@ import org.testng.annotations.Test;
 
 public class MouseHoverTest {
     MouseHover MouseHover = new MouseHover();
+
     @Test
-    public void LoginPageVerificationTest(){
+    public void LoginPageVerificationTest() {
         MouseHover.setUp();
 
     }
-
 
 
 }
