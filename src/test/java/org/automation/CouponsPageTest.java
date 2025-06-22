@@ -4,9 +4,9 @@ import org.automation.coupons.CouponsPage;
 import org.testng.annotations.Test;
 
 public class CouponsPageTest {
-    CouponsPage couponsPage = new CouponsPage();
+    CouponsPage CouponsPage = new CouponsPage();
     @Test
-    public static void CouponsPageVerificationTest(){
+    public void CouponsPageVerificationTest(){
 
         CouponsPage.setUp();
 

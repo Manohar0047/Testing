@@ -8,7 +8,7 @@ public class CheckBoxPageTest {
 
     @Test
     public void verifyCheckBoxPage() {
-        CheckBoxPage.setUp();
+        checkBoxPage.setUp();
     }
 
 }

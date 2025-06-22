@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MySuite" verbose="1">
+
+    <test name="NewProject">
+        <classes>
+            <class name="org.automation.CouponsPageTest">
+                <methods>
+                    <include name="CouponsPageVerificationTest" />
+<!--                    <include name="testSearchKeyword" />-->
+                </methods>
+            </class>
+
+<!--            <class name="tests.LoginTest">-->
+<!--                <methods>-->
+<!--                    <include name="testValidLogin" />-->
+<!--                    <exclude name="testInvalidLogin" />-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+
+</suite>
