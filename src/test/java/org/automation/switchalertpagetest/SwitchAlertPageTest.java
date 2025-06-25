@@ -4,7 +4,7 @@ import org.automation.switchalertpage.SwitchAlertPage;
 import org.testng.annotations.Test;
 
 public class SwitchAlertPageTest {
-    SwitchAlertPage switchAlertPage = new SwitchAlertPage();
+    SwitchAlertPage SwitchAlertPage = new SwitchAlertPage();
 
     @Test
     public void verifySwitchAlertPage() throws InterruptedException {

@@ -4,7 +4,7 @@ import org.automation.switchtab.SwitchTabPage;
 import org.testng.annotations.Test;
 
 public class SwitchTabPageTest {
-    SwitchTabPage switchTabPage = new SwitchTabPage();
+    SwitchTabPage SwitchTabPage = new SwitchTabPage();
 
     @Test
     public void verifySwitchTabPage() {
