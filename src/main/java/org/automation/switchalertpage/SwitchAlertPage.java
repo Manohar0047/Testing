@@ -11,9 +11,7 @@ public class SwitchAlertPage {
         JavascriptExecutor scroll = (JavascriptExecutor) basePage.getDriver();
         scroll.executeScript("window.scrollBy(0,1000)");
         basePage.getDriver().findElement(By.id("name")).sendKeys("Manohar");
-        Thread.sleep(2000);
         basePage.getDriver().findElement(By.id("alertbtn")).click();
-        Thread.sleep(2000);
         basePage.getDriver().quit();
 
 
