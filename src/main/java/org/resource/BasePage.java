@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class BasePage {
-    protected WebDriver driver;
+    public static WebDriver driver;
 
     public void launchBrowser() {
 
@@ -16,7 +16,7 @@ public class BasePage {
 
     }
 
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         return driver;
     }
 

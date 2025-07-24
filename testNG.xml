@@ -3,20 +3,21 @@
 
     <test name="NewProject">
         <classes>
-            <class name="org.automation.CouponsPageTest">
+             <class name="org.automation.dropdownpagetest.DropDownPageTest">
                 <methods>
-                    <include name="CouponsPageVerificationTest" />
-<!--                    <include name="testSearchKeyword" />-->
+                    <include name="verifyDropdownPage" />
+
                 </methods>
             </class>
 
-<!--            <class name="tests.LoginTest">-->
-<!--                <methods>-->
-<!--                    <include name="testValidLogin" />-->
+            <class name="org.automation.elementdisplayedpagetest.ElementDisplayedPageTest">
+                <methods>
+                    <include name="verifyElementDisplayedPage" />
 <!--                    <exclude name="testInvalidLogin" />-->
-<!--                </methods>-->
-<!--            </class>-->
+                </methods>
+            </class>
         </classes>
+
     </test>
 
 </suite>

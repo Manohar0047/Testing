@@ -2,6 +2,7 @@ package org.automation.suggestionclass;
 
 import org.openqa.selenium.By;
 import org.resource.BasePage;
+import org.resource.Utility;
 
 public class SuggestionClassPage {
 
@@ -9,7 +10,8 @@ public class SuggestionClassPage {
 
     public void setUp(String india) {
         basePage.launchBrowser();
-        basePage.getDriver().findElement(By.id("autocomplete")).sendKeys("aus");
+        basePage.getDriver().findElement(By.id("autocomplete")).sendKeys(Utility.getProperty("country"));
+
 
     }
 }
